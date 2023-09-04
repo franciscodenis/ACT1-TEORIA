@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Color de fondo industrial */
+}
+
+header {
+    background-color: #222; /* Color de fondo de la barra de navegación */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Color del texto de la barra de navegación */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700; /* Color de resaltado al pasar el mouse */
+}
+
+/* Estilos para el botón del menú desplegable */
+.dropbtn {
+    background-color: #333; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor del menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilos para el contenido del menú desplegable (inicialmente oculto) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Color de fondo del menú desplegable */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Estilos para las opciones del menú desplegable */
+.dropdown-content a {
+    color: white; /* Color del texto de las opciones */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Cambiar el color del texto de las opciones al pasar el mouse */
+.dropdown-content a:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+}
+
+/* Mostrar el menú desplegable al pasar el mouse sobre el botón */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.container {
+    display: flex;
+    /* justify-content: space-between; */ /* Comentario esta línea */
+    flex-wrap: wrap; /* Ajuste de líneas en pantallas pequeñas */
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px;
+    box-sizing: border-box;
+}
+.texto{
+     color: white; 
+}
+.texto-link{
+     color: white; 
+}
+/* Estilos para las cajas */
+.box {
+    /* flex: 1; */ /* Comentario esta línea */
+    background-color: #f1f1f1; /* Color de fondo de las cajas */
+    border: 2px solid #333; /* Borde de las cajas */
+    border-radius: 5px; /* Borde redondeado */
+    padding: 20px; /* Espacio entre el texto y el borde */
+    text-align: center;
+
+    /* margin: 10px; */ /* Comentario esta línea */
+    flex-grow: 1; /* Añadido para ocupar todo el espacio disponible */
+    margin-right: 10px; /* Espacio entre las cajas */
+}
+
+/* Estilos para el enlace de descarga */
+.download-link {
+    text-decoration: none;
+    background-color: #333; /* Color de fondo del enlace */
+    color: white; /* Color del texto del enlace */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto; /* Centrar el enlace */
+}
+
+/* Estilos para el enlace de descarga al pasar el mouse */
+.download-link:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para hacer las cajas responsive */
+@media (max-width: 600px) {
+    .box {
+        /* flex: 0 0 calc(50% - 20px); */ /* Comentario esta línea */
+        flex-basis: calc(50% - 10px); /* Ancho del 50% en pantallas pequeñas */
+        margin-right: 0; /* Sin espacio entre las cajas en pantallas pequeñas */
+    }
+}
